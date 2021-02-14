@@ -86,8 +86,13 @@ export default class App extends Component {
         </div>
         <h1 className="my-5">Memes</h1>
         <div className="row">
-       {/* LOOP OVER MEMES */}
-       
+        {this.state.memes.map((meme)=>{
+         return <div className="blog">
+            <div>{meme.name}</div>
+                   <p>{meme.caption}</p>
+                   <img src={meme.url}/>
+        </div>
+        })}
         </div>
       </div>
     );

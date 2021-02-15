@@ -39,7 +39,7 @@ app.post('/memes', (req, res)=>{
   })
 })
 
-const port = process.env.PORT || 4000
+const port = process.env.PORT || 8081
 
 app.listen(port, function () {
   console.log(` listening on port ${port}! \n http://localhost:${port}`)
